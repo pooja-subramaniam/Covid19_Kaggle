@@ -13,6 +13,9 @@
 	- 'pubmed_id': populated for some of the records
 	- 'Microsoft Academic Paper ID': populated for some of the records
 
+
+
+
 2020-03-20
 ---CHANGES---
 * normalized doi, authors, title, abstract strings
@@ -25,3 +28,21 @@ custom_license: 16959 full text (new: 15533)
 noncomm_use_subset: 2353 full text (new: 385)
 comm_use_subset: 9118 full text (new: 128)
 biorxiv_medrxiv: 885 full text (new: 110)
+
+
+
+
+2020-03-27
+---CHANGES---
+* added column "cord_uid" (this persistent identifier is a 8-char alphanumeric string unique to each entry)
+* added column "url" (URL to paper landing page where available)
+* normalized publication date, dois
+* adjusted deduplication logic slightly (affects 3 papers)
+* removed some entries that correspond to indices or table of contents
+
+---SUMMARY---
+total metadata rows: 45774
+biorxiv_medrxiv: 1053 full text (new: 194, removed: 26)
+comm_use_subset: 9315 full text (new: 210, removed: 13)
+custom_license: 20657 full text (new: 4218, removed: 520)
+noncomm_use_subset: 2350 full text (new: 6, removed: 9)
